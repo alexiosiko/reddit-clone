@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from pymongo import MongoClient
+from bson.objectid import ObjectId
 
 # Open local ports
 app = Flask(__name__)
@@ -47,7 +48,7 @@ def delete_post():
 	post_id = request.json.get('id')
 
 	# Find and delete the post
-	result = posts_collection.delete_one({ '_id': post_id })
+	posts_collection.delete_one({'_id': ObjectId(post_id)})
 
 	return jsonify('Post deleted successfully'), 200
 

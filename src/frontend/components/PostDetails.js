@@ -9,13 +9,14 @@ const PostDetails = ({ selectedPost, setSelectedPost }) => {
 	}
 
 	async function handleOnDeletePost() {
-		const response = await fetch('', {
+		const response = await fetch('https://reddit-clone-5ctl.onrender.com/deletepost', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify({ id: selectedPost._id }),
 		});
+		console.log(response.ok);
 	}
 
 	return (
