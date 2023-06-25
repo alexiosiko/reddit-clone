@@ -3,9 +3,21 @@ import { palette } from "../styles/global-styles";
 import { TouchableWithoutFeedback } from "react-native";
 
 const PostDetails = ({ selectedPost, setSelectedPost }) => {
+
 	function handleOnBackArrow() {
 		setSelectedPost({});
 	}
+
+	async function handleOnDeletePost() {
+		const response = await fetch('', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({ id: selectedPost._id }),
+		});
+	}
+
 	return (
 		<ScrollView >
 			<View style={styles.leftRightView}>
@@ -18,11 +30,15 @@ const PostDetails = ({ selectedPost, setSelectedPost }) => {
 						<Text style={styles.name}>Alexi Ikonomou</Text>
 						<Text style={styles.username}>@alexiosiko</Text>
 					</View>
+					
 				</View>
+				<TouchableWithoutFeedback onPress={handleOnDeletePost} style={{ width: 50, alignSelf: 'center',}}>
+					<Image source={require('./../../../assets/sprites/trash.png')} style={styles.backArrow} />
+				</TouchableWithoutFeedback>
 			</View>
 			<Text style={styles.title}>{selectedPost.title}</Text>
-			<Image source={{ uri: `data:image/jpeg;base64, ${selectedPost.image64}`}}
-							style={styles.image} />
+			{selectedPost.image64 && <Image source={{ uri: `data:image/jpeg;base64, ${selectedPost.image64}`}}
+							style={styles.image} />}
 			<View style={styles.viewRow}>
 				<View style={styles.viewRow}>
 					<Text style={{ color: palette.textcolor }}>{selectedPost.dislikes}</Text>
@@ -38,7 +54,7 @@ const PostDetails = ({ selectedPost, setSelectedPost }) => {
 				</View>
 			</View>
 			<Text style={styles.description}>{selectedPost.description}</Text>
-			<View style={{ height: 50,}}/>
+			<View style={{ height: 100 }} />
 		</ScrollView>
 	)
 }
@@ -60,6 +76,7 @@ const styles = StyleSheet.create({
 		height: 30,
 	},
 	description: {
+		minHeight: 300,
 		marginTop: 10,
 		fontSize: 20,
 		color: palette.textcolor,

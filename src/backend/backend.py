@@ -42,6 +42,15 @@ def upload_post():
 	else:
 		return jsonify('Failed to upload post'), 500
 
+@app.route('/deletepost', methods=['POST'])
+def delete_post():
+	post_id = request.json.get('id')
+
+	# Find and delete the post
+	result = posts_collection.delete_one({ '_id': post_id })
+
+	return jsonify('Post deleted successfully'), 200
+
 # Keep running server
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001)
