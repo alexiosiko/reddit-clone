@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
 import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
-import { globalStyles, palette } from "../styles/global-styles";
+import { palette } from "../styles/global-styles";
 
-function Post({ title, description, likes, dislikes, postId, imgBase64 }) {
+function Post({ title, description, likes, dislikes, postId, image64 }) {
 	const [isFetching, setIsFetching] = useState(false);
-		useEffect(() => {
-	}, [])
 
 	async function handleLike() {
 		if (isFetching == true)
@@ -16,7 +14,6 @@ function Post({ title, description, likes, dislikes, postId, imgBase64 }) {
 			headers: { 'Content-Type': 'application/json'},
 		})
 		dislikes++;
-		// console.log(response);
 	}
 	async function handleDislike() {
 		if (isFetching == true)
@@ -27,7 +24,6 @@ function Post({ title, description, likes, dislikes, postId, imgBase64 }) {
 			headers: { 'Content-Type': 'application/json'},
 		})
 		const response_json = await response.json();
-		// console.log(response_json);
 	}
 
 	return (
@@ -38,7 +34,7 @@ function Post({ title, description, likes, dislikes, postId, imgBase64 }) {
 					<Text style={styles.text}>{description}</Text>
 				</View>
 				<View style={styles.right}>
-					<Image source={require('./../../../assets/images/cow.jpg')}
+					<Image source={{ uri: `data:image/jpeg;base64,${image64}`}}
 						style={styles.image} />
 				</View>
 			</View>
@@ -85,7 +81,7 @@ const styles = StyleSheet.create({
         height: 150,
         margin: 10,
         padding: 10,
-        backgroundColor: palette.dark,
+        backgroundColor: palette.otherNeutral,
     },
 	leftRightContainer: {
 		display: 'flex',

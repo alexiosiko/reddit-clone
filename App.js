@@ -12,7 +12,7 @@ import Notifications  from './src/frontend/pages/Notifications.js';
 import { palette } from './src/frontend/styles/global-styles.js';
 
 export default function App() {
-  const [page, setPage] = useState('home');
+  const [page, setPage] = useState('create');
 
   return (
     <SafeAreaView style={styles.mainContainer}>

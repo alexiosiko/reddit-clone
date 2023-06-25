@@ -1,11 +1,9 @@
 from flask import Flask, request, jsonify
-from flask_cors import cross_origin, CORS
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 
 # Open local ports
 app = Flask(__name__)
-CORS(app)
 
 # create a new MongoClient instance
 client = MongoClient('mongodb+srv://Alexi:verysecurepassword@cluster0.yjwaf2u.mongodb.net/')
@@ -19,7 +17,6 @@ posts_collection = db.posts
 users_collection = db.users
 
 @app.route('/getposts')
-@cross_origin()
 def get_data():
 	# Get the list of posts
 	posts = list(posts_collection.find())
@@ -31,7 +28,6 @@ def get_data():
 	return jsonify(posts)
 
 @app.route('/uploadpost', methods=['POST'])
-@cross_origin()
 def upload_post():
 	post = request.get_json()
 
@@ -43,6 +39,6 @@ def upload_post():
 	else:
 		return jsonify('Failed to upload post'), 500
 
-# Keep running serverv
+# Keep running server
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001)

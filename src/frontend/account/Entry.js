@@ -31,7 +31,7 @@ const Entry = (props) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: palette.dark,
+        backgroundColor: palette.otherNeutral,
     },
     insideContainer: {
         width: '80%',

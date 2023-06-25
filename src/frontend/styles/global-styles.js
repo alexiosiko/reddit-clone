@@ -1,14 +1,14 @@
 import { StyleSheet } from "react-native";
 
 export const palette = {
-    dark: '#06142e',
-    neutral: '#273e46',
+    otherNeutral: '#1f222c',
+    neutral: '#131621',
 
-	top: '#475e66',
-	bottom: '#475e66',
+	top: '#181818',
+	bottom: '#181818',
 
-	titlecolor: '#f1916d',
-	textcolor: '#f5d7db',
+	titlecolor: '#F7FFE5',
+	textcolor: '#A0C49D',
 }
 export const globalStyles = StyleSheet.create({
 

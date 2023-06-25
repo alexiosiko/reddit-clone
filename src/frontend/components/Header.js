@@ -1,16 +1,22 @@
-import { SafeAreaView, StyleSheet, Text } from "react-native";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import { palette } from "../styles/global-styles";
 
 function Header({ header }) {
 	return (
-		<Text style={styles.header}>{header}</Text>
+		<View style={styles.container}>
+			<Text style={styles.header}>{header}</Text>
+		</View>
 	)
 }
 const styles = StyleSheet.create({
+	container: {
+		backgroundColor: palette.neutral,
+		height: 50,
+		justifyContent: 'center',
+	},
 	header: {
-		backgroundColor: palette.top,
 		textAlign: "center",
-		fontSize: 30,
+		fontSize: 25,
 		color: palette.titlecolor,
 	}
 });

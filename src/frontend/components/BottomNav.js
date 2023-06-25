@@ -39,11 +39,9 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-evenly',
-        backgroundColor: palette.bottom,
+        backgroundColor: palette.neutral,
         paddingBottom: Platform.OS == 'ios' ? 30 : 0,
 
-		borderTopWidth: 1,
-		borderColor: 'gray',
     },
     button: {
         padding: 10,
@@ -51,8 +49,9 @@ const styles = StyleSheet.create({
         height: 50,
     },
 	image: {
-		height: '100%',
-		width: '100%',
+		alignSelf: 'center',
+		height: '65%',
+		width: '65%',
 	}
 })
 export default BottomNav;
