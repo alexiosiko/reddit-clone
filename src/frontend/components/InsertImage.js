@@ -27,7 +27,7 @@ const ImportImage = ({ setImage64 }) => {
 	async function uriTo800By800(uri) {
 		return await ImageManipulator.manipulateAsync(
 			uri,
-			[{ resize: { height:400,  width:400 } }],
+			[{ resize: { height:1080,  width:1080 } }],
 			{ compress: 1, format: ImageManipulator.SaveFormat.JPEG },
 		);
 	}

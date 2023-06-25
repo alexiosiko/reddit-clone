@@ -53,7 +53,7 @@ function Create() {
 							<Text style={styles.name}>Alexi Ikonomou</Text>
 							<Text style={styles.username}>@alexiosiko</Text>
 						</View>
-						<InsertImage />
+						<InsertImage setImage64={setImage64}/>
 					</View>
 					<TextInput style={[styles.titleInput, styles.textInput]}
 						onChange={handleOnChangeTitle}
@@ -100,7 +100,6 @@ const styles = StyleSheet.create({
 		borderRadius: 25,
 		width: 50,
 		height: 50,
-		backgroundColor: 'red',
 	},
 	textInput: {
 		backgroundColor: palette.otherNeutral,

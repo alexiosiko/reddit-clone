@@ -27,11 +27,11 @@ function Post({ title, description, likes, dislikes, postId, image64 }) {
 	}
 
 	return (
-		<View style={styles.post}>
+		<View style={styles.post} >
 			<View style={styles.leftRightContainer}>
 				<View style={styles.left}>
 					<Text style={styles.title}>{title}</Text>
-					<Text style={styles.text}>{description}</Text>
+					<Text style={[styles.text, { maxHeight: 75}]}>{description}</Text>
 				</View>
 				<View style={styles.right}>
 					<Image source={{ uri: `data:image/jpeg;base64,${image64}`}}
@@ -52,25 +52,6 @@ function Post({ title, description, likes, dislikes, postId, image64 }) {
 					</View>
 				</View>
 			</View>
-			{/* <Text style={styles.postTitle}>{title}</Text>
-			<Text style={styles.postDescription}>{description}</Text>
-			<View style={styles.bottom}>
-				<View style={styles.bottomItem}>
-					<TouchableOpacity onPress={handleLike}>
-						<Image source={require('./../../../assets/sprites/likes-icon.png')}
-							style={{height: 20, width: 20}}></Image>
-					</TouchableOpacity>
-					<Text style={styles.count}>{likes}</Text>
-				</View>
-				<View style={styles.bottomItem}>
-					<TouchableOpacity onPress={handleDislike}>
-						<Image source={require('./../../../assets/sprites/dislikes-icon.png')}
-							style={{height: 20, width: 20}}></Image>
-					</TouchableOpacity>
-					<Text style={styles.count}>{dislikes}</Text>
-				</View>
-				<View style={styles.bottomItem}></View>
-			</View> */}
 		</View>
 	);
 }
