@@ -1,21 +1,25 @@
-import { Image, Keyboard, StyleSheet, Text, TextInput, TouchableHighlight, TouchableWithoutFeedback, View } from "react-native";
+import { Button, Image, Keyboard, StyleSheet, Text, TextInput, TouchableHighlight, TouchableOpacity, TouchableWithoutFeedback, View } from "react-native";
 import { palette } from "../styles/global-styles";
 import { useState } from "react";
 import InsertImage from '../components/InsertImage.js';
 import Header from "../components/Header";
+import { TouchableHighlightComponent } from "react-native";
 
 function Create() {
 	const [title, setTitle] = useState("");
 	const [description, setDescription] = useState("");
 	const [image64, setImage64] = useState("");
-
-	function handleOnSubmit() {
-		if (title == "" || description == "" || image64 == "") {
+	const [postStatus, setPostStatus] = useState({});
+	async function handleOnSubmit() {
+		if (title == "" || description == "") {
 			console.warn("Required fields missing...");
 			return;
 		}
+		setPostStatus({ result: 'Uploading post...', color: 'yellow' });
 		const post = createPost();
-		uploadPost(post);
+		console.log(post);
+		const response = await uploadPost(post);
+		setPostStatus({ result: 'Successfully uploaded post!', color: 'green'})
 	}
 
 	function createPost() {
@@ -30,11 +34,12 @@ function Create() {
 	}
 
 	async function uploadPost(post) {
-		const response = await fetch("http://192.168.1.72:5001/uploadpost", {
+		const response = await fetch("https://reddit-clone-5ctl.onrender.com/uploadpost", {
 			method: "POST",
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify(post),
 		});	
+		return response;
 	}
 
 	return (
@@ -48,36 +53,32 @@ function Create() {
 							<Text style={styles.name}>Alexi Ikonomou</Text>
 							<Text style={styles.username}>@alexiosiko</Text>
 						</View>
+						<InsertImage />
 					</View>
-					<TextInput style={[styles.titleInput, styles.textInput]}/>
+					<TextInput style={[styles.titleInput, styles.textInput]}
+						onChange={handleOnChangeTitle}
+						placeholder="Post title"
+						placeholderTextColor={palette.titlecolor}/>
 					<TextInput style={[styles.descritionInput, styles.textInput]}
+						onChange={handleOnChangeDescription}
+						placeholder="What do you want to talk about?"
+						placeholderTextColor={palette.textcolor}
 						multiline={true}
 						textAlignVertical="top"/>
-					{/* <Text>asdsadsa</Text>
-					<View style={styles.body}>
-						<InsertImage setImage64={setImage64} />
-						<TextInput style={styles.textInput} 
-							placeholder="Title ..."
-							onChangeText={handleOnChangeTitle}></TextInput>
-						<TextInput style={[styles.textInput, styles.description]}
-							placeholder="Description ..." 
-							multiline={true} 
-							maxLength={700} 
-							onChangeText={handleOnChangeDescription}/>
-						<TouchableHighlight style={styles.button} onPress={handleOnSubmit}>
-							<Text style={styles.buttonText}>Post</Text>
-						</TouchableHighlight>
-					</View> */}
+					<TouchableOpacity style={styles.button} onPress={handleOnSubmit}>
+						<Text>Upload Post</Text>
+					</TouchableOpacity>
+					<Text style={{ color: postStatus.color, textAlign: 'center', marginTop: 20,}}>{postStatus.result}</Text>
 				</View>
 			</View>
 		</TouchableWithoutFeedback>)
 	
-	function handleOnChangeTitle(title) {
-		setTitle(title);
+	function handleOnChangeTitle(e) {
+		setTitle(e.nativeEvent.text);
 	}
 	
-	function handleOnChangeDescription(description) {
-		setDescription(description);
+	function handleOnChangeDescription(e) {
+		setDescription(e.nativeEvent.text);
 	}
 }
 const styles = StyleSheet.create({
@@ -114,6 +115,16 @@ const styles = StyleSheet.create({
 		color: palette.textcolor,
 		padding: 20,
 		height: 220,
+	},
+	button: {
+		marginTop: 15,
+		height: 30,
+		width: '50%',
+		alignSelf: 'center',
+		justifyContent: 'center',
+		alignItems: 'center',
+		backgroundColor: palette.button,
+		borderRadius: 20,
 	}
 })
 export default Create;

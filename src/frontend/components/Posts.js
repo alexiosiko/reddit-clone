@@ -26,7 +26,7 @@ function Posts() {
 
 	async function fetchPosts() {
 		try {
-			const response = await fetch("http://192.168.1.72:5001/getposts");
+			const response = await fetch("https://reddit-clone-5ctl.onrender.com/getposts");
 			const data = await response.json();
 			setPosts(data);
 		} catch (error) {

@@ -4,11 +4,10 @@ export const palette = {
     otherNeutral: '#1f222c',
     neutral: '#131621',
 
-	top: '#181818',
-	bottom: '#181818',
+	button: '#ccc',
 
-	titlecolor: '#F7FFE5',
-	textcolor: '#A0C49D',
+	titlecolor: '#FFF',
+	textcolor: '#c7cFc5',
 }
 export const globalStyles = StyleSheet.create({
 

@@ -1,0 +1,680 @@
+ LOG  {
+    "_children": [],
+    "_internalFiberInstanceHandleDEV": {
+        "_debugHookTypes": null,
+        "_debugNeedsRemount": false,
+        "_debugOwner": {
+            "_debugHookTypes": [Array
+            ],
+            "_debugNeedsRemount": false,
+            "_debugOwner": [FiberNode
+            ],
+            "_debugSource": undefined,
+            "actualDuration": 1,
+            "actualStartTime": 1687661717505,
+            "alternate": [FiberNode
+            ],
+            "child": [FiberNode
+            ],
+            "childLanes": 0,
+            "deletions": null,
+            "dependencies": null,
+            "elementType": [Function InternalTextInput
+            ],
+            "flags": 8388613,
+            "index": 0,
+            "key": null,
+            "lanes": 1,
+            "memoizedProps": [Object
+            ],
+            "memoizedState": [Object
+            ],
+            "mode": 2,
+            "pendingProps": [Object
+            ],
+            "ref": null,
+            "return": [FiberNode
+            ],
+            "selfBaseDuration": 1,
+            "sibling": null,
+            "stateNode": null,
+            "subtreeFlags": 516,
+            "tag": 0,
+            "treeBaseDuration": 1,
+            "type": [Function InternalTextInput
+            ],
+            "updateQueue": [Object
+            ]
+        },
+        "_debugSource": undefined,
+        "actualDuration": 0,
+        "actualStartTime": 1687661717506,
+        "alternate": {
+            "_debugHookTypes": null,
+            "_debugNeedsRemount": false,
+            "_debugOwner": [FiberNode
+            ],
+            "_debugSource": undefined,
+            "actualDuration": 0,
+            "actualStartTime": 1687661717511,
+            "alternate": [Circular
+            ],
+            "child": null,
+            "childLanes": 0,
+            "deletions": null,
+            "dependencies": null,
+            "elementType": "AndroidTextInput",
+            "flags": 516,
+            "index": 0,
+            "key": null,
+            "lanes": 0,
+            "memoizedProps": [Object
+            ],
+            "memoizedState": null,
+            "mode": 2,
+            "pendingProps": [Object
+            ],
+            "ref": [Function forwardRef
+            ],
+            "return": [FiberNode
+            ],
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": [Circular
+            ],
+            "subtreeFlags": 0,
+            "tag": 5,
+            "treeBaseDuration": 0,
+            "type": "AndroidTextInput",
+            "updateQueue": null
+        },
+        "child": null,
+        "childLanes": 0,
+        "deletions": null,
+        "dependencies": null,
+        "elementType": "AndroidTextInput",
+        "flags": 516,
+        "index": 0,
+        "key": null,
+        "lanes": 0,
+        "memoizedProps": {
+            "accessible": true,
+            "allowFontScaling": true,
+            "autoCapitalize": "sentences",
+            "blurOnSubmit": true,
+            "caretHidden": undefined,
+            "children": undefined,
+            "disableFullscreenUI": undefined,
+            "focusable": true,
+            "forwardedRef": null,
+            "mostRecentEventCount": 9,
+            "onBlur": [Function _onBlur
+            ],
+            "onChange": [Function _onChange
+            ],
+            "onClick": [Function onClick
+            ],
+            "onFocus": [Function _onFocus
+            ],
+            "onResponderGrant": [Function onResponderGrant
+            ],
+            "onResponderMove": [Function onResponderMove
+            ],
+            "onResponderRelease": [Function onResponderRelease
+            ],
+            "onResponderTerminate": [Function onResponderTerminate
+            ],
+            "onResponderTerminationRequest": [Function onResponderTerminationRequest
+            ],
+            "onScroll": [Function _onScroll
+            ],
+            "onSelectionChange": [Function _onSelectionChange
+            ],
+            "onStartShouldSetResponder": [Function onStartShouldSetResponder
+            ],
+            "placeholder": "Post title",
+            "placeholderTextColor": "#F7FFE5",
+            "rejectResponderTermination": true,
+            "selection": null,
+            "style": [Array
+            ],
+            "text": "",
+            "textBreakStrategy": undefined,
+            "underlineColorAndroid": "transparent"
+        },
+        "memoizedState": null,
+        "mode": 2,
+        "pendingProps": {
+            "accessible": true,
+            "allowFontScaling": true,
+            "autoCapitalize": "sentences",
+            "blurOnSubmit": true,
+            "caretHidden": undefined,
+            "children": undefined,
+            "disableFullscreenUI": 
+undefined,
+            "focusable": true,
+            "forwardedRef": null,
+            "mostRecentEventCount": 9,
+            "onBlur": [Function _onBlur
+            ],
+            "onChange": [Function _onChange
+            ],
+            "onClick": [Function onClick
+            ],
+            "onFocus": [Function _onFocus
+            ],
+            "onResponderGrant": [Function onResponderGrant
+            ],
+            "onResponderMove": [Function onResponderMove
+            ],
+            "onResponderRelease": [Function onResponderRelease
+            ],
+            "onResponderTerminate": [Function onResponderTerminate
+            ],
+            "onResponderTerminationRequest": [Function onResponderTerminationRequest
+            ],
+            "onScroll": [Function _onScroll
+            ],
+            "onSelectionChange": [Function _onSelectionChange
+            ],
+            "onStartShouldSetResponder": [Function onStartShouldSetResponder
+            ],
+            "placeholder": "Post title",
+            "placeholderTextColor": "#F7FFE5",
+            "rejectResponderTermination": true,
+            "selection": null,
+            "style": [Array
+            ],
+            "text": "",
+            "textBreakStrategy": undefined,
+            "underlineColorAndroid": "transparent"
+        },
+        "ref": [Function forwardRef
+        ],
+        "return": {
+            "_debugHookTypes": null,
+            "_debugNeedsRemount": false,
+            "_debugOwner": [FiberNode
+            ],
+            "_debugSource": undefined,
+            "actualDuration": 0,
+            "actualStartTime": 1687661717506,
+            "alternate": [FiberNode
+            ],
+            "child": [Circular
+            ],
+            "childLanes": 0,
+            "deletions": null,
+            "dependencies": null,
+            "elementType": [Object
+            ],
+            "flags": 0,
+            "index": 0,
+            "key": null,
+            "lanes": 0,
+            "memoizedProps": [Object
+            ],
+            "memoizedState": null,
+            "mode": 2,
+            "pendingProps": [Object
+            ],
+            "ref": null,
+            "return": [FiberNode
+            ],
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": null,
+            "subtreeFlags": 516,
+            "tag": 10,
+            "treeBaseDuration": 0,
+            "type": [Object
+            ],
+            "updateQueue": null
+        },
+        "selfBaseDuration": 0,
+        "sibling": null,
+        "stateNode": [Circular
+        ],
+        "subtreeFlags": 0,
+        "tag": 5,
+        "treeBaseDuration": 0,
+        "type": "AndroidTextInput",
+        "updateQueue": null
+    },
+    "_nativeTag": 12213,
+    "clear": [Function clear
+    ],
+    "getNativeRef": [Function getNativeRef
+    ],
+    "isFocused": [Function isFocused
+    ],
+    "setSelection": [Function setSelection
+    ],
+    "viewConfig": {
+        "bubblingEventTypes": {
+            "topBlur": [Object
+            ],
+            "topChange": [Object
+            ],
+            "topEndEditing": [Object
+            ],
+            "topFocus": [Object
+            ],
+            "topKeyPress": [Object
+            ],
+            "topPointerCancel": [Object
+            ],
+            "topPointerDown": [Object
+            ],
+            "topPointerEnter2": [Object
+            ],
+            "topPointerLeave2": [Object
+            ],
+            "topPointerMove2": [Object
+            ],
+            "topPointerUp": [Object
+            ],
+            "topSelect": [Object
+            ],
+            "topSubmitEditing": [Object
+            ],
+            "topTextInput": [Object
+            ],
+            "topTouchCancel": [Object
+            ],
+            "topTouchEnd": [Object
+            ],
+            "topTouchMove": [Object
+            ],
+            "topTouchStart": [Object
+            ]
+        },
+        "Commands": {
+            "blurTextInput": 2,
+            "focusTextInput": 1
+        },
+        "Constants": {
+            "AutoCapitalizationType": [Object
+            ]
+        },
+        "directEventTypes": {
+            "topAccessibilityAction": [Object
+            ],
+            "topClick": [Object
+            ],
+            "topContentSizeChange": [Object
+            ],
+            "topLayout": [Object
+            ],
+            "topLoadingError": [Object
+            ],
+            "topLoadingFinish": [Object
+            ],
+            "topLoadingStart": [Object
+            ],
+            "topMessage": [Object
+            ],
+            "topMomentumScrollBegin": [Object
+            ],
+            "topMomentumScrollEnd": [Object
+            ],
+            "topPointerEnter": [Object
+            ],
+            "topPointerLeave": [Object
+            ],
+            "topPointerMove": [Object
+            ],
+            "topScroll": [Object
+            ],
+            "topScrollBeginDrag": [Object
+            ],
+            "topScrollEndDrag": [Object
+            ],
+            "topSelectionChange": [Object
+            ]
+        },
+        "NativeProps": {
+            "accessibilityActions": "Array",
+            "accessibilityHint": "String",
+            "accessibilityLabel": "String",
+            "accessibilityLabelledBy": "mixed",
+            "accessibilityLiveRegion": "String",
+            "accessibilityRole": "String",
+            "accessibilityState": "Map",
+            "accessibilityValue": "Map",
+            "adjustsFontSizeToFit": "boolean",
+            "alignContent": "String",
+            "alignItems": "String",
+            "alignSelf": "String",
+            "allowFontScaling": "boolean",
+            "aspectRatio": "number",
+            "autoCapitalize": "mixed",
+            "autoComplete": "String",
+            "autoCorrect": "boolean",
+            "autoFocus": "boolean",
+            "backgroundColor": "Color",
+            "blurOnSubmit": "boolean",
+            "borderBottomColor": "Color",
+            "borderBottomLeftRadius": "number",
+            "borderBottomRightRadius": "number",
+            "borderBottomWidth": "number",
+            "borderColor": "Color",
+            "borderEndWidth": "number",
+            "borderLeftColor": "Color",
+            "borderLeftWidth": "number",
+            "borderRadius": "number",
+            "borderRightColor": "Color",
+            "borderRightWidth": "number",
+            "borderStartWidth": "number",
+            "borderStyle": "String",
+            "borderTopColor": "Color",
+            "borderTopLeftRadius": "number",
+            "borderTopRightRadius": "number",
+            "borderTopWidth": "number",
+            "borderWidth": "number",
+            "bottom": "mixed",
+            "caretHidden": "boolean",
+            "collapsable": "boolean",
+            "color": "Color",
+            "contextMenuHidden": "boolean",
+            "cursorColor": "Color",
+            "disableFullscreenUI": "boolean",
+            "display": "String",
+            "editable": "boolean",
+            "elevation": "number",
+            "end": "mixed",
+            "flex": "number",
+            "flexBasis": "mixed",
+            "flexDirection": "String",
+            "flexGrow": "number",
+            "flexShrink": "number",
+            "flexWrap": "String",
+            "fontFamily": "String",
+            "fontSize": "number",
+            "fontStyle": "String",
+            "fontVariant": "Array",
+            "fontWeight": "String",
+            "height": "mixed",
+            "importantForAccessibility": "String",
+            "importantForAutofill": "String",
+            "includeFontPadding": "boolean",
+            "inlineImageLeft": "String",
+            "inlineImagePadding": "number",
+            "justifyContent": "String",
+            "keyboardType": "String",
+            "left": "mixed",
+            "letterSpacing": "number",
+            "lineHeight": "number",
+            "margin": "mixed",
+            "marginBottom": "mixed",
+            "marginEnd": "mixed",
+            "marginHorizontal": "mixed",
+            "marginLeft": "mixed",
+            "marginRight": "mixed",
+            "marginStart": "mixed",
+            "marginTop": "mixed",
+            "marginVertical": "mixed",
+            "maxFontSizeMultiplier": "number",
+            "maxHeight": "mixed",
+            "maxLength": "number",
+            "maxWidth": "mixed",
+            "minHeight": "mixed",
+            "minimumFontScale": "number",
+            "minWidth": "mixed",
+            "mostRecentEventCount": "number",
+            "multiline": "boolean",
+            "nativeID": "String",
+            "numberOfLines": "number",
+            "onContentSizeChange": "boolean",
+            "onKeyPress": "boolean",
+            "onLayout": "boolean",
+            "onMoveShouldSetResponder": "boolean",
+            "onMoveShouldSetResponderCapture": "boolean",
+            "onPointerEnter": "boolean",
+            "onPointerLeave": "boolean",
+            "onPointerMove": "boolean",
+            "onResponderEnd": "boolean",
+            "onResponderGrant": "boolean",
+            "onResponderMove": "boolean",
+            "onResponderReject": "boolean",
+            "onResponderRelease": "boolean",
+            "onResponderStart": "boolean",
+            "onResponderTerminate": "boolean",
+            "onResponderTerminationRequest": "boolean",
+            "onScroll": "boolean",
+            "onSelectionChange": "boolean",
+            "onShouldBlockNativeResponder": "boolean",
+            "onStartShouldSetResponder": "boolean",
+            "onStartShouldSetResponderCapture": "boolean",
+            "onTouchCancel": "boolean",
+            "onTouchEnd": "boolean",
+            "onTouchMove": "boolean",
+            "onTouchStart": "boolean",
+            "opacity": "number",
+            "overflow": "String",
+            "padding": "mixed",
+            "paddingBottom": "mixed",
+            "paddingEnd": "mixed",
+            "paddingHorizontal": "mixed",
+            "paddingLeft": "mixed",
+            "paddingRight": "mixed",
+            "paddingStart": "mixed",
+            "paddingTop": "mixed",
+            "paddingVertical": "mixed",
+            "placeholder": "String",
+            "placeholderTextColor": "Color",
+            "position": "String",
+            "renderToHardwareTextureAndroid": "boolean",
+            "returnKeyLabel": "String",
+            "returnKeyType": "String",
+            "right": "mixed",
+            "rotation": "number",
+            "scaleX": "number",
+            "scaleY": "number",
+            "secureTextEntry": "boolean",
+            "selection": "Map",
+            "selectionColor": "Color",
+            "selectTextOnFocus": "boolean",
+            "shadowColor": "Color",
+            "showSoftInputOnFocus": "boolean",
+            "start": "mixed",
+            "testID": "String",
+            "text": "String",
+            "textAlign": "String",
+            "textAlignVertical": "String",
+            "textBreakStrategy": "String",
+            "textDecorationLine": "String",
+            "textShadowColor": "Color",
+            "textShadowOffset": "Map",
+            "textShadowRadius": "number",
+            "textTransform": "String",
+            "top": "mixed",
+            "transform": "Array",
+            "translateX": "number",
+            "translateY": "number",
+            "underlineColorAndroid": "Color",
+            "width": "mixed",
+            "zIndex": "number"
+        },
+        "uiViewClassName": "AndroidTextInput",
+        "validAttributes": {
+            "accessibilityActions": true,
+            "accessibilityHint": true,
+            "accessibilityLabel": true,
+            "accessibilityLabelledBy": true,
+            "accessibilityLiveRegion": true,
+            "accessibilityRole": true,
+            "accessibilityState": true,
+            "accessibilityValue": true,
+            "adjustsFontSizeToFit": true,
+            "alignContent": true,
+            "alignItems": true,
+            "alignSelf": true,
+            "allowFontScaling": true,
+            "aspectRatio": true,
+            "autoCapitalize": true,
+            "autoComplete": true,
+            "autoCorrect": true,
+            "autoFocus": true,
+            "backgroundColor": [Object
+            ],
+            "blurOnSubmit": true,
+            "borderBottomColor": [Object
+            ],
+            "borderBottomLeftRadius": true,
+            "borderBottomRightRadius": true,
+            "borderBottomWidth": true,
+            "borderColor": [Object
+            ],
+            "borderEndWidth": true,
+            "borderLeftColor": [Object
+            ],
+            "borderLeftWidth": true,
+            "borderRadius": true,
+            "borderRightColor": [Object
+            ],
+            "borderRightWidth": true,
+            "borderStartWidth": true,
+            "borderStyle": true,
+            "borderTopColor": [Object
+            ],
+            "borderTopLeftRadius": true,
+            "borderTopRightRadius": true,
+            "borderTopWidth": true,
+            "borderWidth": true,
+            "bottom": true,
+            "caretHidden": true,
+            "collapsable": true,
+            "color": [Object
+            ],
+            "contextMenuHidden": true,
+            "cursorColor": [Object
+            ],
+            "disableFullscreenUI": true,
+            "display": true,
+            "editable": true,
+            "elevation": true,
+            "end": true,
+            "flex": true,
+            "flexBasis": true,
+            "flexDirection": true,
+            "flexGrow": true,
+            "flexShrink": true,
+            "flexWrap": true,
+            "fontFamily": true,
+            "fontSize": true,
+            "fontStyle": true,
+            "fontVariant": true,
+            "fontWeight": true,
+            "height": true,
+            "importantForAccessibility": true,
+            "importantForAutofill": true,
+            "includeFontPadding": true,
+            "inlineImageLeft": true,
+            "inlineImagePadding": true,
+            "justifyContent": true,
+            "keyboardType": true,
+            "left": true,
+            "letterSpacing": true,
+            "lineHeight": true,
+            "margin": true,
+            "marginBottom": true,
+            "marginEnd": true,
+            "marginHorizontal": true,
+            "marginLeft": true,
+            "marginRight": true,
+            "marginStart": true,
+            "marginTop": true,
+            "marginVertical": true,
+            "maxFontSizeMultiplier": true,
+            "maxHeight": true,
+            "maxLength": true,
+            "maxWidth": true,
+            "minHeight": true,
+            "minimumFontScale": true,
+            "minWidth": true,
+            "mostRecentEventCount": true,
+            "multiline": true,
+            "nativeID": true,
+            "numberOfLines": true,
+            "onContentSizeChange": true,
+            "onKeyPress": true,
+            "onLayout": true,
+            "onMoveShouldSetResponder": true,
+            "onMoveShouldSetResponderCapture": true,
+            "onPointerEnter": true,
+            "onPointerLeave": true,
+            "onPointerMove": true,
+            "onResponderEnd": true,
+            "onResponderGrant": true,
+            "onResponderMove": true,
+            "onResponderReject": true,
+            "onResponderRelease": true,
+            "onResponderStart": true,
+            "onResponderTerminate": true,
+            "onResponderTerminationRequest": true,
+            "onScroll": true,
+            "onSelectionChange": true,
+            "onShouldBlockNativeResponder": true,
+            "onStartShouldSetResponder": true,
+            "onStartShouldSetResponderCapture": true,
+            "onTouchCancel": true,
+            "onTouchEnd": true,
+            "onTouchMove": true,
+            "onTouchStart": true,
+            "opacity": true,
+            "overflow": true,
+            "padding": true,
+            "paddingBottom": true,
+            "paddingEnd": true,
+            "paddingHorizontal": true,
+            "paddingLeft": true,
+            "paddingRight": true,
+            "paddingStart": true,
+            "paddingTop": true,
+            "paddingVertical": true,
+            "placeholder": true,
+            "placeholderTextColor": [Object
+            ],
+            "position": true,
+            "renderToHardwareTextureAndroid": true,
+            "returnKeyLabel": true,
+            "returnKeyType": true,
+            "right": true,
+            "rotation": true,
+            "scaleX": true,
+            "scaleY": true,
+            "secureTextEntry": true,
+            "selection": true,
+            "selectionColor": [Object
+            ],
+            "selectTextOnFocus": true,
+            "shadowColor": [Object
+            ],
+            "showSoftInputOnFocus": true,
+            "start": true,
+            "style": [Object
+            ],
+            "testID": true,
+            "text": true,
+            "textAlign": true,
+            "textAlignVertical": true,
+            "textBreakStrategy": true,
+            "textDecorationLine": true,
+            "textShadowColor": [Object
+            ],
+            "textShadowOffset": true,
+            "textShadowRadius": true,
+            "textTransform": true,
+            "top": true,
+            "transform": true,
+            "translateX": true,
+            "translateY": true,
+            "underlineColorAndroid": [Object
+            ],
+            "width": true,
+            "zIndex": true
+        }
+    }
+}
