@@ -15,6 +15,10 @@ db = client.reddit
 posts_collection = db.posts
 users_collection = db.users
 
+@app.route('/test')
+def test():
+	return 'test'
+
 @app.route('/getposts')
 def get_data():
 	# Get the list of posts
