@@ -1,9 +1,8 @@
-import { Button, Image, Keyboard, StyleSheet, Text, TextInput, TouchableHighlight, TouchableOpacity, TouchableWithoutFeedback, View } from "react-native";
+import { Image, Keyboard, StyleSheet, Text, TextInput, TouchableOpacity, TouchableWithoutFeedback, View } from "react-native";
 import { palette } from "../styles/global-styles";
 import { useState } from "react";
 import InsertImage from '../components/InsertImage.js';
 import Header from "../components/Header";
-import { TouchableHighlightComponent } from "react-native";
 
 function Create() {
 	const [title, setTitle] = useState("");
@@ -48,7 +47,7 @@ function Create() {
 			<Header header="Create" />
 				<View style={styles.body}>
 					<View style={styles.leftRightView}>
-						<Image source={require('./../../../assets/images/cow.jpg')} style={styles.profilePic} />
+						<Image source={require('./../../../assets/sprites/profile-pic.png')} style={styles.profilePic} />
 						<View style={{marginLeft: 5, justifyContent: 'center'}}>
 							<Text style={styles.name}>Alexi Ikonomou</Text>
 							<Text style={styles.username}>@alexiosiko</Text>
@@ -86,6 +85,8 @@ const styles = StyleSheet.create({
 		padding: 20,
 	},
 	leftRightView: {
+		alignItems: 'center',
+		marginLeft: 10,
 		flexDirection: 'row',
 	},
 	name: {
@@ -98,8 +99,8 @@ const styles = StyleSheet.create({
 	},
 	profilePic: {
 		borderRadius: 25,
-		width: 50,
-		height: 50,
+		width: 30,
+		height: 30,
 	},
 	textInput: {
 		backgroundColor: palette.otherNeutral,

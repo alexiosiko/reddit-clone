@@ -1,4 +1,4 @@
-import { ImageBackground, StyleSheet, Text, TouchableHighlight, View } from "react-native";
+import { ImageBackground, StyleSheet, Text, TouchableHighlight, View, Image } from "react-native";
 import { palette } from "../styles/global-styles";
 import * as ImagePicker from 'expo-image-picker';
 import * as ImageManipulator from 'expo-image-manipulator';
@@ -39,17 +39,16 @@ const ImportImage = ({ setImage64 }) => {
 
 	return (
 		<TouchableHighlight style={styles.touchable} onPress={handleOnInsertImage}>
-			<ImageBackground style={styles.imageBackground} source={{ uri: backgroundImageUri}}>
-				{!backgroundImageUri && <Text style={styles.buttonText}>Pick an image</Text>}
-			</ImageBackground>
+			{!backgroundImageUri ? <Image style={styles.imageBackground} source={require('./../../../assets/sprites/picture.png')}/> 
+			: <Image style={styles.imageBackground} source={{ uri: backgroundImageUri}}/>}
 		</TouchableHighlight>
 		)
 }
 const styles = StyleSheet.create({
 	touchable: {
-		marginLeft: '10%',
-		backgroundColor: palette.otherNeutral,
+		marginLeft: '20%',
 		width: 50,
+		backgroundColor: 'red',
 		aspectRatio: 1/1,
 		borderRadius: 10,
 	},
@@ -63,8 +62,8 @@ const styles = StyleSheet.create({
 		justifyContent: 'center',
 		borderRadius: 10,
 		overflow: 'hidden',
-		width: '100%',
-		aspectRatio: 1/1
+		height: '100%',
+		aspectRatio: 1/1,
 	}
 })
 export default ImportImage;

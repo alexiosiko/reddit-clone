@@ -1,6 +1,5 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity, TouchableHighlight, SafeAreaView, ScrollView } from "react-native";
+import { View, Text, StyleSheet, Image, ScrollView, TouchableHighlight } from "react-native";
 import { palette } from "../styles/global-styles";
-import { TouchableWithoutFeedback } from "react-native";
 
 const PostDetails = ({ selectedPost, setSelectedPost }) => {
 
@@ -22,20 +21,20 @@ const PostDetails = ({ selectedPost, setSelectedPost }) => {
 	return (
 		<ScrollView >
 			<View style={styles.leftRightView}>
-				<TouchableWithoutFeedback onPress={handleOnBackArrow} style={{ width: 50, alignSelf: 'center', justifyContent: 'center',}}>
+				<TouchableHighlight onPress={handleOnBackArrow} style={{ width: 50, alignSelf: 'center', justifyContent: 'center',}}>
 					<Image source={require('./../../../assets/sprites/back-arrow.png')} style={styles.backArrow} />
-				</TouchableWithoutFeedback>
+				</TouchableHighlight>
 				<View style={[styles.leftRightView, {justifyContent: 'center', width: '80%',}]}>
-					<Image source={require('./../../../assets/images/cow.jpg')} style={styles.profilePic} />
+					<Image source={require('./../../../assets/sprites/profile-pic.png')} style={styles.profilePic} />
 					<View style={{marginLeft: 5, justifyContent: 'center'}}>
 						<Text style={styles.name}>Alexi Ikonomou</Text>
 						<Text style={styles.username}>@alexiosiko</Text>
 					</View>
 					
 				</View>
-				<TouchableWithoutFeedback onPress={handleOnDeletePost} style={{ width: 50, alignSelf: 'center',}}>
+				<TouchableHighlight onPress={handleOnDeletePost} style={{ width: 50, alignSelf: 'center',}}>
 					<Image source={require('./../../../assets/sprites/trash.png')} style={styles.backArrow} />
-				</TouchableWithoutFeedback>
+				</TouchableHighlight>
 			</View>
 			<Text style={styles.title}>{selectedPost.title}</Text>
 			{selectedPost.image64 && <Image source={{ uri: `data:image/jpeg;base64, ${selectedPost.image64}`}}
