@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "expo start --dev-client",
-    "deploy": "expo start:web",
+	"build": "npx expo export:web",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web"
@@ -12,21 +12,16 @@
   "dependencies": {
     "@expo/webpack-config": "^0.17.0",
     "expo": "^46.0.21",
-    "expo-dev-client": "^2.2.1",
     "expo-file-system": "~14.1.0",
     "expo-image-manipulator": "~10.4.0",
     "expo-image-picker": "~13.3.1",
-    "expo-splash-screen": "~0.16.2",
-    "expo-status-bar": "~1.4.4",
-    "expo-updates": "~0.14.7",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.69.9",
-    "react-native-web": "~0.18.10"
+    "react-native-web": "~0.18.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
-    "gh-pages": "^5.0.0"
+    "@babel/core": "^7.20.0"
   },
   "private": true
 }
