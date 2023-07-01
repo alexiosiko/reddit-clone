@@ -22,9 +22,7 @@ jobs:
         run: yarn install
 
       - name: Build
-        run: |
-          yarn build:android
-          # or yarn build:ios if targeting iOS
+        run: yarn build:web
 
       - name: Run Tests
         run: yarn test 
