@@ -47,8 +47,7 @@ const ImportImage = ({ setImage64 }) => {
 const styles = StyleSheet.create({
 	touchable: {
 		marginLeft: '20%',
-		width: 50,
-		backgroundColor: 'red',
+		width: 40,
 		aspectRatio: 1/1,
 		borderRadius: 10,
 	},

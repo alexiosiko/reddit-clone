@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.js": "/static/js/main.6ede9844.js",
+    "static/js/237.af7e08ea.js": "/static/js/237.af7e08ea.js",
+    "static/media/create.png": "/static/media/create.e259a23d0bdcff4c2a9b.png",
+    "static/media/notifications.png": "/static/media/notifications.6bd3678553f2ad6de395.png",
+    "static/media/profile-pic.png": "/static/media/profile-pic.1906238a10bdffb00b2c.png",
+    "static/media/explore.png": "/static/media/explore.1fa79535d06d18f033d4.png",
+    "static/media/picture.png": "/static/media/picture.0e8af238087f8396afe3.png",
+    "favicon.ico": "/favicon.ico",
+    "static/media/comment.png": "/static/media/comment.93d7227a31e9cc4dafb5.png",
+    "static/media/like.png": "/static/media/like.247ab11e1c2992524f90.png",
+    "static/media/dislike.png": "/static/media/dislike.347d96ae7f3bbc0518d5.png",
+    "static/media/home.png": "/static/media/home.6f75f9869cdb0c4318b0.png",
+    "static/media/trash.png": "/static/media/trash.e985b369afce5374c4cf.png",
+    "static/media/back-arrow.png": "/static/media/back-arrow.0655c88f2c815004a5f8.png",
+    "static/media/settings.png": "/static/media/settings.f1c5819f68d458a8bebb.png",
+    "index.html": "/index.html",
+    "favicon-32.png": "/favicon-32.png",
+    "favicon-16.png": "/favicon-16.png",
+    "manifest.json": "/manifest.json",
+    "serve.json": "/serve.json",
+    "main.6ede9844.js.map": "/static/js/main.6ede9844.js.map",
+    "237.af7e08ea.js.map": "/static/js/237.af7e08ea.js.map"
+  },
+  "entrypoints": [
+    "static/js/237.af7e08ea.js",
+    "static/js/main.6ede9844.js"
+  ]
+}

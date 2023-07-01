@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
-import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
+import { useEffect, useRef, useState } from "react";
+import { View, Text, StyleSheet, Image, TouchableOpacity, Animated } from "react-native";
 import { palette } from "../styles/global-styles";
 
 function Post({ title, description, likes, dislikes, postId, image64 }) {
 	const [isFetching, setIsFetching] = useState(false);
+	const fadeAnim = useRef(new Animated.Value(0)).current;
 
 	async function handleLike() {
 		if (isFetching == true)

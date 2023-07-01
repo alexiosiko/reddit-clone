@@ -6,15 +6,8 @@ import { View, Text, StyleSheet, Image, TouchableOpacity, TouchableHighlight, Sa
 
 
 const Home = () => {
-	const [selectedPost, setSelectedPost] = useState({}
-		// {"_id": "6497ad35b69f1244b4db3037", 
-		// "description": "hacker hacker hacke hacker hacddkdder  hacker hacddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddacker hacker hacke hacker hacddkdder  hacker hacddkddkdder  hacker hacddkdder  hacke hacker hacddkdder  hacker hacddkdder  hacker hacddkdder  hacker hacddkdder  hacker hacddkdder  hacker hacddkdder  hacker hacddkdder r hacddkdder  hacker hacddkdder  hacker hacddkdder  hacker hacddkdder r hacddkdder hackder hacker hacddkdder hackder hacker hacddkdder hackder hacker hacddkdder hackder hacddkdder hackder kdsaasddsaasddsaerer emdddd",
-		// "dislikes": 0, 
-		// "image64": "", 
-		// "likes": 0, 
-		// "owner": "owner", 
-		// "title": "vinneeddddtdddadsadsdsa"}
-		);
+	const [selectedPost, setSelectedPost] = useState({});
+	const [isFetching, setIsFetching] = useState(true);
 	return (
 		<>
 			<Header header="Home" />

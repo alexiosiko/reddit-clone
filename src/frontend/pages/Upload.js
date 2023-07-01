@@ -17,7 +17,7 @@ function Create() {
 		setPostStatus({ result: 'Uploading post...', color: 'yellow' });
 		const post = createPost();
 		console.log(post);
-		const response = await uploadPost(post);
+		// const response = await uploadPost(post);
 		setPostStatus({ result: 'Successfully uploaded post!', color: 'green'})
 	}
 

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import BottomNav      from './src/frontend/components/BottomNav.js';
 import SignUp         from './src/frontend/account/SignUp.js';
 import Entry          from './src/frontend/account/Entry.js';
-import Create 		  from './src/frontend/pages/Create.js';
+import Upload 		  from './src/frontend/pages/Upload.js';
 import Home           from './src/frontend/pages/Home.js';
 import Explore        from './src/frontend/pages/Explore.js';
 import Settings       from './src/frontend/pages/Settings.js';
@@ -20,7 +20,7 @@ export default function App() {
         {page === 'explore' && <Explore/>}
         {page === 'notifications' && <Notifications/>}
         {page === 'settings' && <Settings/>}
-        {page === 'create' && <Create />}
+        {page === 'create' && <Upload />}
         {page === 'entry' && <Entry setPage={setPage}/>}
         {page === 'signup' && <SignUp setPage={setPage}/>}
         {page !== 'login' && page !== 'signup' && <BottomNav setPage={setPage} />}

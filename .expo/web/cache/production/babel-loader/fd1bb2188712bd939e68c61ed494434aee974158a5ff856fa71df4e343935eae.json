@@ -1,0 +1,1 @@
+{"ast":null,"code":"export*from\"./FileSystem\";","map":{"version":3,"names":[],"sources":["C:\\Users\\alexi\\Documents\\react-native\\reddit-clone\\node_modules\\expo-file-system\\src\\index.ts"],"sourcesContent":["export * from './FileSystem';\n"],"mappings":"AAAA"},"metadata":{},"sourceType":"module","externalDependencies":[]}
