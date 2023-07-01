@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Build with Expo
-        run: yarn start --non-interactive
+        run: yarn start
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
