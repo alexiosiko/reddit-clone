@@ -7,7 +7,6 @@ import { View, Text, StyleSheet, Image, TouchableOpacity, TouchableHighlight, Sa
 
 const Home = () => {
 	const [selectedPost, setSelectedPost] = useState({});
-	const [isFetching, setIsFetching] = useState(true);
 	return (
 		<>
 			<Header header="Home" />

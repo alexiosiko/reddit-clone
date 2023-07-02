@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Reddit Clone",
-    "slug": "reddit-clone",
+    "name": "Project",
+    "slug": "Project",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,23 +15,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.alexiosiko.reddit-clone"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.alexiosiko.redditclone"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "18451041-1dca-4eb5-98db-97fc91aabf96"
-      }
     }
   }
 }
