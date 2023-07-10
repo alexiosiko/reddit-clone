@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
 
 export const palette = {
-    otherNeutral: '#3f3f3f',
-    neutral: '#0e181f',
+    otherNeutral: '#1B1F39',
+    neutral: '#050114',
 
-	button: '#c8d0c3',
+	button: '#a6bCeA',
 
 	titlecolor: '#FFF',
 	textcolor: '#e0e9f1',

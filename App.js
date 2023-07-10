@@ -15,16 +15,16 @@ export default function App() {
   const [page, setPage] = useState('create');
 
   return (
-    <SafeAreaView style={styles.mainContainer}>
-        {page === 'home' && <Home/>}
-        {page === 'explore' && <Explore/>}
-        {page === 'notifications' && <Notifications/>}
-        {page === 'settings' && <Settings/>}
-        {page === 'create' && <Create />}
-        {page === 'entry' && <Entry setPage={setPage}/>}
-        {page === 'signup' && <SignUp setPage={setPage}/>}
-        {page !== 'login' && page !== 'signup' && <BottomNav setPage={setPage} />}
-    </SafeAreaView>
+		<SafeAreaView style={styles.mainContainer}>
+			{page === 'home' && <Home/>}
+			{page === 'explore' && <Explore/>}
+			{page === 'notifications' && <Notifications/>}
+			{page === 'settings' && <Settings/>}
+			{page === 'create' && <Create />}
+			{page === 'entry' && <Entry setPage={setPage}/>}
+			{page === 'signup' && <SignUp setPage={setPage}/>}
+			{page !== 'login' && page !== 'signup' && <BottomNav setPage={setPage} page={page} />}
+		</SafeAreaView>
   );
 }
 

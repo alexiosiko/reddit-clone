@@ -1,7 +1,11 @@
 import { View, Text, StyleSheet, Image, ScrollView, TouchableHighlight } from "react-native";
 import { palette } from "../styles/global-styles";
+import { useState } from "react";
+import LoadingIcon from './LoadingIcon.js';
 
 const PostDetails = ({ selectedPost, setSelectedPost }) => {
+	const [isDeleting, setIsDeleting] = useState(true);
+	const [deletedStatus, setDeletedStatus] = useState({off: true})
 
 	function handleOnBackArrow() {
 		setSelectedPost({});
@@ -15,7 +19,11 @@ const PostDetails = ({ selectedPost, setSelectedPost }) => {
 			},
 			body: JSON.stringify({ id: selectedPost._id }),
 		});
-		console.log(response.ok);
+		setDeletedStatus({
+			result: "Post deleted",
+			color: "green",
+			hide: true,
+		})
 	}
 
 	return (
@@ -30,13 +38,13 @@ const PostDetails = ({ selectedPost, setSelectedPost }) => {
 						<Text style={styles.name}>Alexi Ikonomou</Text>
 						<Text style={styles.username}>@alexiosiko</Text>
 					</View>
-					
 				</View>
-				<TouchableHighlight onPress={handleOnDeletePost} style={{ width: 50, alignSelf: 'center',}}>
+				<TouchableHighlight onPress={handleOnDeletePost} style={{ width: 50, alignSelf: 'center', right: 10}}>
 					<Image source={require('./../../../assets/sprites/trash.png')} style={styles.backArrow} />
 				</TouchableHighlight>
 			</View>
-			<Text style={styles.title}>{selectedPost.title}</Text>
+				<Text style={styles.title}>{selectedPost.title}</Text>
+				{isDeleting && <LoadingIcon message={deletedStatus} />}
 			{selectedPost.image64 && <Image source={{ uri: `data:image/jpeg;base64, ${selectedPost.image64}`}}
 							style={styles.image} />}
 			<View style={styles.viewRow}>
@@ -70,12 +78,14 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		marginTop: 10,
 		marginBottom: 20,
+		marginLeft: 10,
 	},
 	backArrow: {
 		width: 30,
 		height: 30,
 	},
 	description: {
+		marginLeft: 10,
 		minHeight: 300,
 		marginTop: 10,
 		fontSize: 20,

@@ -3,7 +3,6 @@ import { palette } from "../styles/global-styles";
 import { useState } from "react";
 import InsertImage from '../components/InsertImage.js';
 import Header from "../components/Header";
-import { TouchableHighlightComponent } from "react-native";
 
 function Create() {
 	const [title, setTitle] = useState("");
@@ -53,7 +52,9 @@ function Create() {
 							<Text style={styles.name}>Alexi Ikonomou</Text>
 							<Text style={styles.username}>@alexiosiko</Text>
 						</View>
-						<InsertImage setImage64={setImage64}/>
+						<View style={styles.insertImageParent}>
+							<InsertImage setImage64={setImage64}/>
+						</View>
 					</View>
 					<TextInput style={[styles.titleInput, styles.textInput]}
 						onChange={handleOnChangeTitle}
@@ -95,6 +96,12 @@ const styles = StyleSheet.create({
 	username: {
 		color: palette.textcolor,
 		fontSize: 10,
+	},
+	insertImageParent: { 
+		flex: 1, 
+		alignItems: 'flex-end',
+		justifyContent: 'center', 
+		paddingRight: 10,
 	},
 	profilePic: {
 		borderRadius: 25,

@@ -15,8 +15,11 @@ function Posts({ setSelectedPost }) {
 		setSelectedPost(post);
 	}
 	return (
-		<View style={{height: '100%'}}>
-		{isFetching ? <LoadingIcon message={"Fetching posts..."}/> :
+		<View style={{ height: '100%' }}>
+		{isFetching ? 
+			<View style={{ justifyContent: 'center', marginBottom: 50, flex: 1, }}>
+				<LoadingIcon message={{ result: "Fetching posts", color: 'yellow', }}/>
+			</View> : 
 			<ScrollView>
 			{posts.map((post) => (
 				<TouchableHighlight
