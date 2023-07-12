@@ -9,7 +9,7 @@ const ImportImage = ({ setImage64 }) => {
 	const [backgroundImageUri, setBackgroundImageUri] = useState(null);
 	async function handleOnInsertImage() {
 		let result = await userSelectsImage();			// User selects image
-		if (result.canceled) 							// If user cancels STOP
+		if (result.cancelled) 							// If user cancels STOP
 			return;					
 		result = await uriTo800By800(result.uri);		// Convert image to 800 x 800
 		const base64 = await uriToBase64(result.uri);	// Convert image to base64Code
